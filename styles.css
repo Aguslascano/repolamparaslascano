@@ -1,0 +1,281 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(238, 185, 135);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container {
+  width: 95%;
+  margin: 0px auto;
+  padding: 60px;
+  overflow: hidden;
+  display: flex;
+}
+
+.container__logo {
+  float: inline-start;
+  position: relative;
+}
+
+header {
+  background: rgb(236, 218, 198);
+  height: 120px;
+  width: 100%;
+  color: tan;
+  border-bottom: 3px dashed white;
+  
+
+}
+.main{
+  margin-top: 40px;
+}
+.barra-inicio {
+  background-image: linear-gradient(
+    270deg,
+    rgb(247, 201, 243) 0%,
+    rgb(228, 106, 50) 100%
+  );
+  box-shadow: rgb(170, 136, 85) 0px 1px 0px 0px;
+  display: flex;
+  height: 24px;
+}
+.h2 {
+  color: rgb(245, 151, 172);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+nav {
+  text-align: right;
+  padding: 30px 50px 0 0;
+  height: 50px;
+  width: auto;
+}
+
+nav > a {
+  color: beige;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 20px;
+}
+nav > a:hover {
+  text-decoration: underline;
+}
+
+.contenedor > h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+.contenedor-sobre-iconos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.imagen domicilio {
+  width: 10%;
+  height: 10%;
+}
+
+.imagen pedido {
+  width: 10%;
+  height: 10%;
+}
+
+.imagen regalo {
+  width: 10%;
+  height: 10%;
+}
+
+.portafolio {
+  background: cornsilk;
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+.galeria-port {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.galeria-port.imagenes {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+.imagenes > p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.redes > img {
+  text-align: center;
+  justify-content: center;
+}
+
+.titulonosotros {
+  background-color: blue;
+}
+
+.form {
+  padding: 60px;
+  width: 300px;
+  background-color: #e7e7e7;
+  margin: 0 auto;
+}
+form input, form textarea {
+  margin-bottom: 15px;
+  font-family: sans-serif;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border: none;
+  color: #525c66;
+  font-size: 12px;
+  resize: none;
+}
+
+.form button {
+  display: block;
+  background-color: #0095eb;
+  padding: 10px 45px 10px 45px;
+  border: 0px;
+  font-size: 16px;
+  color: white;
+  font-family: sans-serif;
+}
+.textarea {
+  resize: none;
+}
+
+.form button hover {
+  background-color: #046193;
+}
+
+.contenedorprod {
+  flex-flow: column wrap;
+  border: palegoldenrod 2px;
+  padding: 10px;
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  object-fit: cover;
+  margin-top: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
+  grid-auto-flow: dense;
+}
+.imggridcontainer1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.imggridcontainer2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.imggridcontainer3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.imggridcontainer4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.imggridcontainer5 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.imggridcontainer6 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.imggridcontainer7 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+.imggridcontainer8 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.mainos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 96px;
+  padding: 192px 24px;
+}
+.mainos > titulomain {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: var(--whitey);
+  position: absolute;
+  top: 96px;
+}
+.mainos > titulomain > h4 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--teflon);
+}
+.mainos > titulomain > p {
+  line-height: 16px;
+  font-size: 13px;
+  margin-top: 6px;
+  text-align: center;
+  color: var(--gandalf);
+}
+
+.twocolumnsright {
+  flex-direction: row-reverse;
+}
+.mediapic {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.mediapic > img {
+  width: 100%;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: var(--shadow-type-1);
+}
+.twocolumnsright > text {
+  margin-right: 48px;
+}
+.twocolumnsright > text > p {
+  text-align: left;
+  line-height: 21px;
+  font-size: 18px;
+  color: var(--gandalf);
+}
+
+.gridcontainer> .imggridcontainer1{
+  position: relative;
+  grid-column: span 3;
+}
+.imggridcontainer1> h3{
+  position: absolute;
+}
+
+@media (max-width: 600px){
+  .container { flex-direction: column;}
+
+}
