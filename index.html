@@ -6,85 +6,166 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lampa Deco Lascano</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="shortcun icon" href="multimedia.html/logo.jpg">
-
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./js/bootstrap.min.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <div id="container">
-        <header>
-            <section class="barra-inicio">
-                <p>Bienvenidos a LA'MPA DECO. Disenos realizados con hilos de algodon-yute-cordon...</p>
-            </section>
+    <header class="container-fluid bg-warning.bg-gradient d-flex justify-content-center">
+        <p class="text-light fs-6">Bienvenidos a LA'MPA DECO. Disenos realizados con hilos de algodon-yute-cordon...</p>
+    </header>
 
-            <img class="container__logo" src="./multimedia.html/logo.jpg" alt="logo" width="150" height="130">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./pages/inicio.html">LAMPA'DECO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./pages/contacto.html" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contacto
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./pages/contacto.html">Action</a></li>
 
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
 
-        </header>
-        
-
-        <main>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="./pages/nosotros.html">Nosotros</a>
-                <a href="./pages/contacto.html">Contacto</a>
-                <a href="./pages/productos.html">Productos</a>
-            </nav>
-    
-            <div class="contenedor">
-                <h2 class="contenedor">Envios a domicilio -  Pedidos -  Regala con nosotros</h2>
-
-                <div class="contenedor-sobre-iconos">
-                    <img src="./multimedia.html/domicilio.jpg" alt="domicilio" class="imagen domicilio" width="150"
-                        height="150">
-                    <img src="./multimedia.html/pedidos2.jpg" alt="pedidos" class="imagen pedido" width="150"
-                        height="150">
-                    <img src="./multimedia.html/regalo.jpg" alt="regalo" class="imagen regalo" width="150" height="150">
-                </div>
-
-            </div>
-
-
-
-            <div class="portafolio">
-                <h2 class="NOVEDADES"> Novedades</h2>
-                <br>
-
-                <div class="galeria-port">
-                    <div class="imagenes">
-                        <img src="./multimedia.html/pantallayute.jpg" alt="" width="300" height="300">
-                        <p>Breve descripcion</p>
-                        <div class="imagenes"></div>
-                        <img src="./multimedia.html/dehilo.jpg" alt="" width="300" height="300">
-                        <p>Breve descripcion</p>
-                        <div class="imagenes"></div>
-                        <img src="./multimedia.html/pantallashiloalg.jpg" alt="" width="300" height="300">
-                        <p>Breve descripcion</p>
-                        <div class="imagenes"></div>
-                        <img src="./multimedia.html/lampara2.jpg" alt="" width="300" height="300">
-                        <p>Breve descripcion</p>
-
-                    </div>
-                </div>
-
-                <br>
-                <br>
-                <div class="redes">
-                    <h2 class="redesociales">"SEGUINOS EN NUESTRAS REDES"</h2>
-                    <img src="./multimedia.html/iconos.jpg" alt="iconos" width="200" height="auto">
-
-                </div>
+                </ul>
 
             </div>
+        </div>
+    </nav>
 
-        </main>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./multimedia.html/dehilo2.jpg" class="d-block w-100" alt="slide1">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./multimedia.html/lampara.jpg" class="d-block w-100" alt="slide2">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./multimedia.html/lampara2.jpg" class="d-block w-100" alt="slide3">
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
-    <footer class="footer">2021 Developed by Agustina Lascano</footer>
+    <section class="w-50 mx-auto text-center pt-5" id="intro">
+        <h1>DISENOS UNICOS Y PERSONALIZADOS PARA DECORAR TODOS TUS ESPACIOS</h1>
+        <p class="p-3 fs-4">Hechos no solo con amor, sino con hilos de algodon, yute y cordon</p>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <img src="./multimedia.html/pedidos2.jpg" alt="pedidos" width="180" height="160">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">pedidos</h3>
+                    <p class="px-4">pequena descripcion sobre pedidos</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <img src="./multimedia.html/regalo.jpg" alt="pedidos" width="180" height="160">
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1">Regala</h3>
+                <p class="px-4">pequena descripcion sobre que se puede regalar</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <img src="./multimedia.html/domicilio.jpg" alt="pedidos" width="180" height="160">
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1">Envios sin cargo</h3>
+                <p class="px-4">pequena descripcion sobre envios</p>
+            </div>
+        </div>
 
 
+
+    </section>
+
+
+
+    <div class="card-group">
+        <div class="card">
+            <img src="./multimedia.html/logo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">LAMPARAS DE HILO</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./multimedia.html/logo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">LAMPARA YUTE</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./multimedia.html/logo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">LAMPARA CORDON</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="w-100 d-flex align-items justify-content-center flex-wrap">
+        <p class="fs-5 px-3 pt-3">Developed by Agustina Lascano 2021</p>
+        <div id="iconos">
+            <a href="#"><i class="bi bi-facebook"></i>/a>
+            <a href="#"><i class="bi bi-instagram"></i>/a>
+            <a href="#"><i class="bi bi-whatsapp"></i>/a>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
