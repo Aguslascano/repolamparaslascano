@@ -1,13 +1,155 @@
+@charset "UTF-8";
+/**/
+/*DOCUMENTO PRINCIPAL DE ESTILOS DE LA PÁGINA*/
+/*Implementado por medio del compilador SASS*/
+/**/
+/*Importación de elementos de estilos*/
+/*RESETEO GENERAL DE ESTILOS*/
+li,
+span,
+a,
+h1,
+h2,
+h3,
+p {
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   background-color: rgb(233, 201, 74);
 }
 
+.navbar-toggler {
+  font-size: 40px;
+}
 .carousel-inner {
   max-height: 39rem;
 }
 
+.section {
+  padding: 120px, 0;
+}
+.bg-dark {
+  background-color: rgb(100, 87, 87) !important;
+}
+
+#hero {
+  background-image: url(./multimedia.html/hero.jpg);
+  background-size: cover;
+  padding-top: 90px;
+  min-height: 400px;
+  color: white;
+  border-color: white;
+}
+.text-center {
+  text-align: center !important;
+}
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+/*Variables Media Query*/
+
+main {
+  background-color: #ffffff;
+}
+main section {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+main .banner {
+  width: 100%;
+  padding-top: 62px;
+  background-image: url("./multimedia.html/fondo.jpg");
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .banner .banner-texto {
+  width: 100%;
+  margin: 1.5em 0;
+  padding: 0 2%;
+  font-family: "EB Garamond", serif;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #101c21;
+}
+main .contacto-datos .subtitulo,
+main .formulario .subtitulo,
+main .menu-seccion .menu-subtitulo .subtitulo-texto {
+  font-family: "Nanum Myeongjo", serif;
+  color: #101c21;
+  font-size: 1.05em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  padding: 0.4em;
+}
+
+main .descripcion-principal .descripcion-texto {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+  font-family: "Nanum Myeongjo", serif;
+  color: #101c21;
+  font-size: 1.2em;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+}
+
+main .menu-seccion .menu-container .menu-tarjeta:hover,
+main .linea-fotos .imagen-linea:hover {
+  border: none;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
 
 .form {
   padding: 60px;
@@ -15,7 +157,8 @@ body {
   background-color: #e7e7e7;
   margin: 0 auto;
 }
-form input, form textarea {
+form input,
+form textarea {
   margin-bottom: 15px;
   font-family: sans-serif;
   width: 100%;
@@ -44,25 +187,239 @@ form input, form textarea {
   background-color: #046193;
 }
 
-.footer{
-  background: black;
-  min-height: 100px;
-
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%),
+    inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+}
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
 }
 
-.footer p{
-  color: white;
+main .descripcion-principal .descripcion-texto {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+  font-family: "Nanum Myeongjo", serif;
+  color: #101c21;
+  font-size: 1.2em;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+}
+main .menu-seccion .menu-container .menu-tarjeta:hover,
+main .linea-fotos .imagen-linea:hover {
+  border: none;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+main .descripcion-principal .descripcion-texto {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+  font-family: "Nanum Myeongjo", serif;
+  color: #101c21;
+  font-size: 1.2em;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+}
+main .menu-seccion .menu-container .menu-tarjeta:hover,
+main .linea-fotos .imagen-linea:hover {
+  border: none;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+main .menu-seccion {
+  padding-top: 1em;
+}
+main .menu-seccion .menu-subtitulo {
+  border-bottom: solid 1px #ffffff;
+  background-color: #f4f4f4;
+  position: sticky;
+  top: 62px;
+  z-index: 9;
+}
+main .menu-seccion .menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #f4f4f4;
+}
+main .menu-seccion .menu-container .menu-tarjeta {
+  margin: 0.5em;
+  background-color: #ffffff;
+  border-radius: 0 20px;
+}
+main .menu-seccion .menu-container .menu-tarjeta .card-img-top {
+  border-radius: 0 20px;
+}
+main .menu-seccion .menu-container .menu-tarjeta .card-title {
+  font-family: "Nanum Myeongjo", serif;
+  width: 100%;
+  font-size: 1.1em;
+  text-align: center;
+  color: #101c21;
+  font-weight: bold;
+}
+main .menu-seccion .menu-container .menu-tarjeta .card-text {
+  color: #101c21;
+  font-size: 1.1em;
+  font-family: "EB Garamond", serif;
   text-align: center;
 }
-
-#iconos i{
-font-size: 26px;
-padding: 0 8px;
+main .menu-seccion .menu-container .menu-tarjeta .menu-precio {
+  padding: 0 0.3em;
+  color: #101c21;
+  background-color: #efe3de;
+  border-radius: 0 5px;
 }
 
+main .menu-barra-nav {
+  position: sticky;
+  bottom: 0;
+  z-index: 9;
+}
+main .menu-barra-nav ul {
+  width: 100%;
+  margin: 0;
+  background-color: #f4f4f4;
+  border: solid 1px #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .menu-barra-nav ul li {
+  padding: 0.3em;
+  margin: 0 0.5em;
+}
+main .menu-barra-nav ul li a {
+  width: 100%;
+  color: #101c21;
+  font-family: "EB Garamond", serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
 
-@media (max-widht:768px) {
+hr:not([size]) {
+  height: 1px;
+}
+.featurette-divider {
+  margin: 5rem 0;
+}
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-image: url(./multimedia.html/pedidos2.jpg);
+}
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+.py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+.my-4 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+.pb-3 {
+  padding-bottom: 1rem rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+.justify-content-center {
+  justify-content: center !important;
+}
+.border-bottom {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+.text-muted {
+  --bs-text-opacity: 1;
+  color: #6c757d !important;
+}
+.text-center {
+  text-align: center !important;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+@media (max-widht: 768px) {
   #intro {
     width: 90% !important;
   }
 }
+
+/*Media Query Mobile*/
+@media only screen and (max-width: 400px) {
+
+}
+/*Media Query Tablet*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {}
