@@ -1,0 +1,27 @@
+/*VARIABLES DE ESTILOS*/
+
+/*Colores*/
+$colores:(
+
+    blanco: #ffffff,
+    blanco-senales: #f4f4f4,
+    verde-fuerte: #101c21,
+    salmon-fuerte: #ec5d33,
+    salmon-claro: #efe3de,
+
+);
+
+/*Fuentes*/
+@mixin fuentes($fuente){
+
+    @if $fuente == titulo {
+        font-family: 'Dancing Script', cursive;
+    } 
+    @else if $fuente == subtitulo{
+        font-family: 'EB Garamond', serif;
+    } 
+    @else {
+        font-family: 'Nanum Myeongjo', serif;
+    }
+
+}

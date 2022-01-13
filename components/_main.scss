@@ -1,0 +1,56 @@
+.menu-container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    background-color: map-get($colores , blanco-senales );
+
+    .menu-tarjeta{
+
+        margin: 0.5em;
+        background-color: map-get($colores , blanco);
+        border-radius: 0 20px;            
+
+        .card-img-top{
+            border-radius: 0 20px;
+        }
+
+        .card-title{
+
+            @include fuentes(general);
+            width: 100%;
+            font-size: 1.1em;
+            text-align: center;
+            color: map-get($colores , verde-fuerte );
+            font-weight: bold;
+
+        }
+
+        .card-text{
+
+            color: map-get($colores ,verde-fuerte );
+            font-size: 1.1em;
+            @include fuentes(subtitulo);
+            text-align: center;
+
+        }
+
+        .menu-precio{
+
+            padding: 0 0.3em;
+            color: map-get($colores , verde-fuerte );
+            background-color: map-get($colores , salmon-claro );
+            border-radius: 0 5px;
+
+        }
+
+        &:hover{
+            @extend %hover-recuadros;
+        }
+    }
+}
+}

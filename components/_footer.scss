@@ -1,0 +1,12 @@
+/*CONFIGURACIÓN GENERAL DE ESTILOS DE LAS SECCIONES DEL PIE DE PÁGINA*/
+
+/*Importacion de variables*/
+@import '../base/variables';
+
+footer{
+    background-color: map-get($colores , verde-fuerte );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+    
