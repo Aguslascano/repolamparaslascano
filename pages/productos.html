@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lampa Deco Lascano</title>
-
+  <!-- SEO -->
+  <meta name="description"
+    content="Somos Lampa Deco, y construimos este microemprendimiento de calidad, novedoso y creativo. Contamos con los mejores diseños personalizados de lámparas a tu gusto, y alcance. ¡Enterate de todas nuestras novedades aquí!">
+  <meta name="keywords" content="lamparas, diseno, iluminacion">
+  <title>LAMPA DECO</title>
   <link rel="shortcun icon" href="multimedia.html/logo.jpg">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./js/bootstrap.min.js">
@@ -18,47 +21,77 @@
 </head>
 
 <body>
-  <header class="container-fluid bg-warning.bg-gradient d-flex justify-content-center">
-    <p class="text-light fs-6">Bienvenidos a LA'MPA DECO. Disenos realizados con hilos de algodon-yute-cordon...</p>
-  </header>
+  <!--INICIO CABECERA DE LA PÁGINA-->
+  <header>
 
-  <!--INICIO BARRA DE NAVEGACION DE LA PÁGINA-->
+    <!--Barra de navegación principal-->
+    <section class="barra-navegacion">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">LAMPA'DECO</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="./contacto.html" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Contacto
+      <section class="logo-titulo">
+
+        <section class="logo-header">
+          <a href="../index.html">
+            <img src="../multimedia.html/logolamparita.jpg" alt="lampa deco logo">
+          </a>
+        </section>
+
+        <section class="titulo">
+          <h1>
+            <a class="contenedor-titulo" href="index.html">
+              <span class="titulo-principal">LAMPA DECO</span>
+              <span class="titulo-secundario">DISENOS EXCLUSIVOS</span>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="./pages/contacto.html">Action</a></li>
+          </h1>
+        </section>
 
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
+      </section>
 
-        </ul>
+      <!--Menu de la barra de navegación-->
+      <section class="menu-navegacion">
 
-      </div>
-    </div>
-  </nav>
+        <!--Implementado por medio del framework Bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="./galeria.html">GALERIA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+      </section>
+      <!---->
+
+    </section>
+    <!---->
+
+  </header>
   <!--FIN CABECERA DE LA PÁGINA-->
 
 
@@ -69,17 +102,17 @@
     <!--Banner de la página-->
     <section class="banner" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
 
-      <h2 class="banner-texto">
-        PRODUCTOS
-      </h2>
+      <h2 data-aos="banner-texto fade-right" data-aos-duration="2000" class="menupages__h2">PRODUCTOS</h2>
+
+
 
     </section>
 
     <!--Descripción principal de la sección-->
     <section class="descripcion-principal">
       <p class="descripcion-texto">
-        Cuan necesario es darle vida a nuestros espacios de nuestra vida cotidiana. Adquiriendo estas lamparas, te
-        aseguramos que ...
+        Seleccionamos cada producto que comercializamos en una evaluación exigente para que estén a tu alcance las
+        ultimas tendencias lumínicas.
       </p>
     </section>
 
@@ -98,7 +131,7 @@
           <div class="card-body">
             <h5 class="card-title">LAMPARA AMPARO</h5>
             <p class="card-text">
-              Breve descripcion de este producto. YUTE COMBINADO CON PIES DE HIERRO
+              Yute combinado con pies de hierro
               <span class="menu-precio">$4.500</span>
             </p>
           </div>
@@ -116,18 +149,18 @@
         </div>
 
         <div class="card menu-tarjeta" style="width: 18rem;" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <img src="../multimedia.html/Yute3.jpg" class="card-img-top" alt="Empanadas Sandoval Restaurante">
+          <img src="../multimedia.html/Yute3.jpg" class="card-img-top" alt="imagen josefina">
           <div class="card-body">
             <h5 class="card-title">LAMPARA JOSEFINA</h5>
             <p class="card-text">
-              Variedad de empanadas fritas y al horno con salsa de la casa.
+              descripcion lampara josefina
               <span class="menu-precio">$4.000</span>
             </p>
           </div>
         </div>
 
         <div class="card menu-tarjeta" style="width: 18rem;" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <img src="../multimedia.html/yute4.jpg" class="card-img-top" alt="Ensalada Sandoval Resturante">
+          <img src="../multimedia.html/yute4.jpg" class="card-img-top" alt="imagen paz">
           <div class="card-body">
             <h5 class="card-title">LAMPARA PAZ</h5>
             <p class="card-text">
@@ -138,7 +171,7 @@
         </div>
 
         <div class="card menu-tarjeta" style="width: 18rem;" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <img src="../multimedia.html/yute5.jpg" class="card-img-top" alt="Sopas Sandoval Restaurante">
+          <img src="../multimedia.html/yute5.jpg" class="card-img-top" alt="imagen aida">
           <div class="card-body">
             <h5 class="card-title">LAMPARA AIDA</h5>
             <p class="card-text">
@@ -149,7 +182,7 @@
         </div>
 
         <div class="card menu-tarjeta" style="width: 18rem;" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <img src="../multimedia.html/lamparacolganteyute.jpeg" class="card-img-top" alt="Papas Sandoval Restaurante">
+          <img src="../multimedia.html/lamparacolganteyute.jpeg" class="card-img-top" alt="imagen cayetana">
           <div class="card-body">
             <h5 class="card-title">LAMPARA CAYETANA</h5>
             <p class="card-text">
@@ -172,8 +205,7 @@
       <div class="menu-container">
 
         <div class="card menu-tarjeta" style="width: 18rem;" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <img src="../multimedia.html/lamparascolor algodon.jpg" class="card-img-top"
-            alt="Salmon Sandoval Restaurante">
+          <img src="../multimedia.html/lamparascolor algodon.jpg" class="card-img-top" alt="imagen a color">
           <div class="card-body">
             <h5 class="card-title">MONICA</h5>
             <p class="card-text">
@@ -184,7 +216,7 @@
         </div>
 
         <div class="card menu-tarjeta" style="width: 18rem;" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <img src="../multimedia.html/color algodon2.jpg" class="card-img-top" alt="Carne Sandoval Restaurante">
+          <img src="../multimedia.html/color algodon2.jpg" class="card-img-top" alt="imagen algodon">
           <div class="card-body">
             <h5 class="card-title">DANIELA</h5>
             <p class="card-text">
@@ -195,7 +227,7 @@
         </div>
 
         <div class="card menu-tarjeta" style="width: 18rem;" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <img src="../multimedia.html/algodon3.jpg" class="card-img-top" alt="Costillas de cerdo Sandoval Restaurante">
+          <img src="../multimedia.html/algodon3.jpg" class="card-img-top" alt="imagen victoria">
           <div class="card-body">
             <h5 class="card-title">VICTORIA</h5>
             <p class="card-text">
@@ -206,7 +238,7 @@
         </div>
 
         <div class="card menu-tarjeta" style="width: 18rem;" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <img src="../multimedia.html/algodon4.jpg" class="card-img-top" alt="Pastas Sandoval Restaurante">
+          <img src="../multimedia.html/algodon4.jpg" class="card-img-top" alt="imagen lucrecia">
           <div class="card-body">
             <h5 class="card-title">LUCRECIA</h5>
             <p class="card-text">
@@ -217,7 +249,7 @@
         </div>
 
         <div class="card menu-tarjeta" style="width: 18rem;" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <img src="../multimedia.html/algodon5.jpg" class="card-img-top" alt="Pollo Sandoval Restaurante">
+          <img src="../multimedia.html/algodon5.jpg" class="card-img-top" alt="imagen marta">
           <div class="card-body">
             <h5 class="card-title">MARTA</h5>
             <p class="card-text">
@@ -228,7 +260,7 @@
         </div>
 
         <div class="card menu-tarjeta" style="width: 18rem;" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <img src="../multimedia.html/algodon6.jpg" class="card-img-top" alt="Pescado Sandoval Restaurante">
+          <img src="../multimedia.html/algodon6.jpg" class="card-img-top" alt="imagen agustina">
           <div class="card-body">
             <h5 class="card-title">AGUSTINA</h5>
             <p class="card-text">
@@ -326,18 +358,7 @@
 
 
 
-
-    <!--Inidicador de navegación -->
-    <section class="menu-barra-nav">
-      <nav>
-        <ul>
-          <li><a href="#YUTE">LAMPARAS DE YUTE</a></li>
-          <li><a href="#ALGODON">LAMPARAS DE ALGODON</a></li>
-          <li><a href="#HIERRO">LAMPARAS DE HIERRO</a></li>
-          
-        </ul>
-      </nav>
-    </section>
+  
 
     <div class="divisor divisor-general">
       <!--Imagen de divisón entre secciones-->
@@ -350,11 +371,11 @@
   <div class="container">
     <footer class="py-3 my-4">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="./pages/inicio.html" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="./pages/productos.html" class="nav-link px-2 text-muted">Productos</a></li>
-        <li class="nav-item"><a href="./pages/contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
-        <li class="nav-item"><a href="./pages/nosotros.html" class="nav-link px-2 text-muted">Nosotros</a></li>
-        
+        <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="./productos.html" class="nav-link px-2 text-muted">Productos</a></li>
+        <li class="nav-item"><a href="./contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+        <li class="nav-item"><a href="./nosotros.html" class="nav-link px-2 text-muted">Nosotros</a></li>
+
       </ul>
       <p class="text-center text-muted">© 2021 Developed by Agustina Lascano</p>
     </footer>

@@ -34,14 +34,96 @@ img {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   overflow-x: hidden;
   background-color: rgb(233, 201, 74);
 }
+/*Barra de navegación principal*/
 
-.navbar-toggler {
-  font-size: 40px;
+header .barra-navegacion {
+  width: 100%;
+  padding: 5px 10%;
+  background-color: #ffffff;
+  border-top: #f8f406 solid 1px;
+  border-bottom: #f4f4f4 solid 1px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 52px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
+header .barra-navegacion .logo-titulo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 78px auto;
+  grid-template-rows: 100%;
+}
+header .barra-navegacion .logo-titulo .logo-header {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .barra-navegacion .logo-titulo .titulo {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+header .barra-navegacion .logo-titulo .titulo .contenedor-titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 100%;
+  height: 100%;
+  padding: 0 3%;
+  margin: 0;
+}
+header .barra-navegacion .logo-titulo .titulo .contenedor-titulo .titulo-principal {
+  font-family: fantasy;
+  font-size: 32.24px;
+  color: #101c21;
+}
+header .barra-navegacion .logo-titulo .titulo .contenedor-titulo .titulo-secundario {
+  font-family: "EB Garamond", serif;
+  font-size: 13.52px;
+  text-transform: uppercase;
+  color: #101c21;
+}
+header .barra-navegacion .menu-navegacion {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .barra-navegacion .menu-navegacion .navbar {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+header .barra-navegacion .menu-navegacion .navbar .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+header .barra-navegacion .menu-navegacion .navbar .container-fluid .nav-link {
+  color: #101c21;
+  font-family: "EB Garamond", serif;
+  font-size: 13.52px;
+  text-transform: uppercase;
+}
+
 .carousel-inner {
   max-height: 39rem;
 }
@@ -50,7 +132,7 @@ body {
   padding: 120px, 0;
 }
 .bg-dark {
-  background-color: rgb(100, 87, 87) !important;
+  background-color: rgb(182, 164, 164) !important;
 }
 
 #hero {
@@ -71,11 +153,14 @@ body {
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
-  display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.row-cols-2 > * {
+  flex: 0 0 auto;
+  width: 50%;
 }
 .mx-auto {
   margin-right: auto !important;
@@ -90,18 +175,9 @@ body {
   margin-top: var(--bs-gutter-y);
 }
 
-/*Variables Media Query*/
-
-main {
-  background-color: #ffffff;
-}
-main section {
-  padding-right: 10%;
-  padding-left: 10%;
-}
 main .banner {
   width: 100%;
-  padding-top: 62px;
+  padding-top: 90px;
   background-image: url("./multimedia.html/fondo.jpg");
   background-position: center;
   background-size: 100%;
@@ -119,6 +195,29 @@ main .banner .banner-texto {
   text-transform: uppercase;
   color: #101c21;
 }
+main .galeria-container {
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+}
+
+/*Variables Media Query*/
+
+main {
+  background-color: #ffffff;
+}
+main section {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+main {
+  overflow: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 main .contacto-datos .subtitulo,
 main .formulario .subtitulo,
 main .menu-seccion .menu-subtitulo .subtitulo-texto {
@@ -131,6 +230,23 @@ main .menu-seccion .menu-subtitulo .subtitulo-texto {
   width: 100%;
   height: 100%;
   padding: 0.4em;
+}
+.nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  font-size: 1.5rem;
+}
+img,
+svg {
+  vertical-align: middle;
+}
+.row > * {
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
 }
 
 main .descripcion-principal .descripcion-texto {
@@ -226,12 +342,7 @@ main .descripcion-principal .descripcion-texto {
   height: 100%;
   text-align: justify;
 }
-main .menu-seccion .menu-container .menu-tarjeta:hover,
-main .linea-fotos .imagen-linea:hover {
-  border: none;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);
-}
+
 main .menu-seccion {
   padding-top: 1em;
 }
@@ -279,34 +390,8 @@ main .menu-seccion .menu-container .menu-tarjeta .menu-precio {
   border-radius: 0 5px;
 }
 
-main .menu-barra-nav {
-  position: sticky;
-  bottom: 0;
-  z-index: 9;
-}
-main .menu-barra-nav ul {
-  width: 100%;
-  margin: 0;
-  background-color: #f4f4f4;
-  border: solid 1px #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-main .menu-barra-nav ul li {
-  padding: 0.3em;
-  margin: 0 0.5em;
-}
-main .menu-barra-nav ul li a {
-  width: 100%;
-  color: #101c21;
-  font-family: "EB Garamond", serif;
-  font-size: 0.9em;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-}
+
+
 .container,
 .container-fluid,
 .container-lg,
@@ -345,13 +430,10 @@ hr {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-.row > * {
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-  margin-top: var(--bs-gutter-y);
+
+.row-cols-2 > * {
+  flex: 0 0 auto;
+  width: 50%;
 }
 
 .bd-placeholder-img {
@@ -360,7 +442,6 @@ hr {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  background-image: url(./multimedia.html/pedidos2.jpg);
 }
 .mx-auto {
   margin-right: auto !important;
@@ -411,6 +492,46 @@ p {
   margin-bottom: 1rem;
 }
 
+#sobre-nosotros {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+.main-title {
+  background-color: #e2e2e1;
+  font-size: 2em;
+  color: #70706f;
+  font-weight: 300;
+  padding: 20px 0;
+  position: relative;
+  margin: 0;
+}
+.py-5 {
+  padding-bottom: 3rem !important;
+}
+.pt-5,
+.py-5 {
+  padding-top: 3rem !important;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#sobre-nosotros .sobre-nosotros-text .text-destacado span {
+  background-color: #fbe20d;
+  padding: 6px 12px;
+  line-height: 55px;
+}
+
+
+
 @media (max-widht: 768px) {
   #intro {
     width: 90% !important;
@@ -419,7 +540,51 @@ p {
 
 /*Media Query Mobile*/
 @media only screen and (max-width: 400px) {
-
 }
 /*Media Query Tablet*/
-@media only screen and (min-width: 401px) and (max-width: 960px) {}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+}
+  header .barra-navegacion {
+    padding: 0.7% 7%;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 100%;
+  }
+
+ /*Configuración sección header*/
+ header .barra-navegacion {
+  padding: 0.7% 4%;
+  display: grid;
+  grid-template-columns: auto 35px;
+  grid-template-rows: 100%;
+}
+header .barra-navegacion .logo-titulo {
+  display: grid;
+  grid-template-columns: 60px auto;
+  grid-template-rows: 100%;
+}
+header .barra-navegacion .logo-titulo .titulo .contenedor-titulo .titulo-principal {
+  font-size: 32px;
+}
+header .barra-navegacion .logo-titulo .titulo .contenedor-titulo .titulo-secundario {
+  font-size: 12px;
+}
+header .barra-navegacion .menu-navegacion .navbar .container-fluid .offcanvas {
+  width: 50%;
+}
+header .barra-navegacion .menu-navegacion .navbar .container-fluid .navbar-toggler {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .barra-navegacion .menu-navegacion .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+  width: 25px;
+  height: 25px;
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0,0,0,.55);
+  border-color: rgba(0,0,0,.1);
+}
