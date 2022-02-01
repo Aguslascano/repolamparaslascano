@@ -139,7 +139,7 @@ header .barra-navegacion .menu-navegacion .navbar .container-fluid .nav-link {
   background-image: url(./multimedia.html/hero.jpg);
   background-size: cover;
   padding-top: 90px;
-  min-height: 400px;
+  min-height: 450px;
   color: white;
   border-color: white;
 }
@@ -177,7 +177,7 @@ header .barra-navegacion .menu-navegacion .navbar .container-fluid .nav-link {
 
 main .banner {
   width: 100%;
-  padding-top: 90px;
+  padding-top: 150px;
   background-image: url("./multimedia.html/fondo.jpg");
   background-position: center;
   background-size: 100%;
@@ -453,11 +453,13 @@ hr {
 }
 
 .container {
-  width: 100%;
+  width: 80%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .py-3 {
   padding-top: 1rem !important;
@@ -587,4 +589,26 @@ header .barra-navegacion .menu-navegacion .navbar .container-fluid .navbar-toggl
 .navbar-light .navbar-toggler {
   color: rgba(0,0,0,.55);
   border-color: rgba(0,0,0,.1);
+}
+#pie-iconos {
+  background-color: #ffffff;
+}
+#pie-iconos .text-destacado {
+  font-size: 1.8em;
+  font-weight: 200;
+  color: #626060;
+  background-color: #fbe20d;
+  padding-left: 4px;
+}
+pie-iconos .text-pie-iconos {
+  font-size: 1.1em;
+  color: #ffff;
+  font-weight: 600;
+}
+p {
+  margin-top: 20px;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-family: "Lobster", cursive;
 }
